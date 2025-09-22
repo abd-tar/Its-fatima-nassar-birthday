@@ -37,7 +37,7 @@ function launchBomb() {
   // Fire 80 emojis in a 3-second burst
   for (let i = 0; i < 80; i++) {
     const angle = (i / 80) * Math.PI * 2;
-    const distance = 250 + Math.random() * 350;
+    const distance = 200 + Math.random() * 350;
     const x = centerX + Math.cos(angle) * distance;
     const y = centerY + Math.sin(angle) * distance;
     const size = 20 + Math.random() * 20;
@@ -178,4 +178,5 @@ if (!storedTime) {
     laterNote.textContent = "P.S. I hope today was as sweet as you are. I’ll always remember this moment — even if we don’t talk every day.";
     laterNote.style.opacity = '1';
   }
+
 }
