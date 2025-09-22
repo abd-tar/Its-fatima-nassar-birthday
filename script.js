@@ -37,7 +37,7 @@ function launchBomb() {
   // Fire 80 emojis in a 3-second burst
   for (let i = 0; i < 80; i++) {
     const angle = (i / 80) * Math.PI * 2;
-    const distance = 80 + Math.random() * 150;
+    const distance = 80 + Math.random() * 80;
     const x = centerX + Math.cos(angle) * distance;
     const y = centerY + Math.sin(angle) * distance;
     const size = 20 + Math.random() * 20;
@@ -180,5 +180,6 @@ if (!storedTime) {
   }
 
 }
+
 
 
