@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Fatima Nassar!</title>
+  <link rel="shortcut icon" href="birthday-cake.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>  
+<body>
+  <!-- Hidden Music Controller -->
+  <div id="music-control" class="music-control">
+    <button id="music-toggle" class="music-toggle">🎵</button>
+    <div class="music-options">
+      <button class="music-btn active" data-src="music/01-Monk-Turner-Fascinoma-Its-Your-Birthday(chosic.com).mp3">It's Your birthday 🎵</button>
+      <button class="music-btn" data-src="music/Happy_birthday_to_you_MIDI(chosic.com).mp3">Happy Birthday 🎵</button>
+      <button class="music-btn" data-src="music/Rodger-Raino-Happy-Happy-Happy-Birthday(chosic.com).mp3">Happy Happy Birthday 🎵</button>
+      <button class="music-btn" data-src="music/babyshark.mp3">Baby Shark 🎵</button>
+      <button class="music-stop" data-stop="true">Stop</button>
+    </div>
+  </div>
+
+  <!-- Emoji Explosion Container -->
+  <div id="emoji-explosion"></div>
+
+  <div class="container">
+    <header class="hero">
+      <h1>🎉 Happy Birthday, <span id="name"></span>! 🎉</h1>
+      <p class="subtitle">Today, the world got brighter because you were born.</p>
+
+      <!-- THE CAKE — Real, Soft, Elegant -->
+      <div class="cake">
+        <div class="cake-base"></div>
+        <div class="cake-middle"></div>
+        <div class="cake-top"></div>
+        <div class="icing swirl"></div>
+        <div class="candle"></div>
+        <div class="flame"></div>
+        <div class="flame-off"></div>
+      </div>
+
+      <button id="blowBtn">Blow Out the Candle 🌬️</button>
+    </header>
+
+    <!-- Rest of content -->
+    <section class="message">
+      <h2>From Me to You 💖</h2>
+      <p>
+        Hey Fatima Nassar,<br><br>
+        I just wanted to say I’ve never forgotten how wonderful you are.<br>
+        Hope your birthday feels as bright as the moments we shared.<br><br>
+        So glad you’re in this world.<br>
+        Happy Birthday.<br><br>
+        - Abdullah Tarhini
+      </p>
+    </section>
+
+    <section class="gallery">
+      <h2>Memories We Made 📸</h2>
+      <div class="photo-grid">
+        <img src="picture/9.jpg" alt="Memory 9">
+        <img src="picture/3.jpg" alt="Memory 3">
+        <img src="picture/4.jpg" alt="Memory 4">
+        <img src="picture/5.jpg" alt="Memory 5">
+        <img src="picture/6.jpg" alt="Memory 6">
+        <img src="picture/1.jpg" alt="Memory 1">
+        <img src="picture/7.jpg" alt="Memory 7">
+        <img src="picture/8.jpg" alt="Memory 8">
+        <img src="picture/10.jpg" alt="Memory 10">
+        <img src="picture/11.jpg" alt="Memory 11">
+      </div>
+    </section>
+
+    <section class="wishes">
+      <h2>Love from Friends & Family ❤️</h2>
+      <div class="wish-list">
+          <div class="wish-card">
+          <strong>Mom:</strong> "Happy birthday ya helwe . w nshallah 3a 2bel el 100 sene w nshofik be a3la el mareteb ❤️"
+        </div>
+        <div class="wish-card">
+          <strong>Sister:</strong> "kel 3am w ente bkher w nshallah ayemik el jey tkon a7san w t7a2e2e kel a7lemik ❤️"
+        </div>
+      
+        <div class="wish-card">
+          <strong>Samer:</strong> "Eeeeee eshbekkkk! 32bel l trilyonnn Fatme"
+        </div>
+        <div class="wish-card">
+          <strong>My cat:</strong> "mew maw myaw myaw yaw mew maw myaw myaw yaw mey may yaw myaw yaw yaw myaw yaw yaw yaw yaw🎉🎂🎈"
+      </div>
+    </section>
+
+    <footer>
+      <p>Created with love for your special day 23/9. © 2025</p>
+    </footer>
+  </div>
+
+  <!-- Full-Screen Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-image" src="" alt="Full image">
+  </div>
+
+  <script src="script.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDR5RTuoRShhDeNMuCD2osMYBvvnfUyOps",
+    authDomain: "its-fatima-birthday-e067e.firebaseapp.com",
+    projectId: "its-fatima-birthday-e067e",
+    storageBucket: "its-fatima-birthday-e067e.firebasestorage.app",
+    messagingSenderId: "274942742960",
+    appId: "1:274942742960:web:d48f3ce28fbac30d04c675",
+    measurementId: "G-030TTYZHS1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
